@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>lpwa.cloud.app</groupId>
-    <artifactId>knoten-app-cloud</artifactId>
+    <artifactId>my-spring-cloud-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>knoten-app-cloud</name>
+    <name>my-spring-cloud-test</name>
     <description>Knoten LPWACloud应用parent模块</description>
     <packaging>pom</packaging>
     <properties>
@@ -19,8 +19,19 @@
         <spring-cloud.version>2021.0.3</spring-cloud.version>
     </properties>
 
+    <modules>
+        <module>eureka-server</module>
+        <module>eureka-client</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>lpwa.cloud.app</groupId>
+                <artifactId>eureka-client</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>

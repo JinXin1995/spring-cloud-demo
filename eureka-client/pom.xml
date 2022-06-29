@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>lpwa.cloud.app</groupId>
-        <artifactId>knoten-app-cloud</artifactId>
+        <artifactId>my-spring-cloud-test</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
