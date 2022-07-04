@@ -20,6 +20,8 @@
     </properties>
 
     <modules>
+        <module>stream-sink</module>
+        <module>stream-source</module>
     </modules>
 
     <dependencyManagement>
